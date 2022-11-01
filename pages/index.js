@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 import Results from "../components/Results/Results";
@@ -18,6 +19,8 @@ export default function Home({ data }) {
       <Nav />
 
       <Results data={data} />
+
+      <Footer/>
     </div>
   );
 }
