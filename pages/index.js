@@ -5,7 +5,7 @@ import Results from "../components/Results/Results";
 import requests from "../utils/requests";
 
 export default function Home({ data }) {
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <Head>
