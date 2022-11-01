@@ -1,13 +1,16 @@
 import { HandThumbUpIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import React from "react";
+import React, { forwardRef } from "react";
 
-function Thumbnail({ result }) {
+const Thumbnail = forwardRef(({ result }, ref) => {
   //   console.log(result);
   const BASE_URL_IMAGE = "http://image.tmdb.org/t/p/original";
 
   return (
-    <div className="group cursor-pointer transiton ease-in transform sm:hover:scale-105 hover:z-50">
+    <div
+      ref={ref}
+      className="group cursor-pointer transiton ease-in transform sm:hover:scale-105 hover:z-50"
+    >
       <Image
         layout="responsive"
         src={
@@ -31,6 +34,6 @@ function Thumbnail({ result }) {
       </div>
     </div>
   );
-}
+});
 
 export default Thumbnail;
