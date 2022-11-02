@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
-import Nav from "../components/Nav/Nav";
-import Results from "../components/Results/Results";
+import Nav from "../components/Home/Nav/Nav";
+import Results from "../components/Home/Results/Results";
+import Footer from "../components/Layout/Footer/Footer";
+import Header from "../components/Layout/Header/Header";
 import requests from "../utils/requests";
 
 export default function Home({ data }) {
